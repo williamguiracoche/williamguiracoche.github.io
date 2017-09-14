@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>William Guiracoche</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" type="../image/png" href="../img/favicon.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Scripts-->
+    <script type="text/javascript" src="../js/analytics.js"></script>
+    <script type="text/javascript" src="../js/jquery-2.1.3.min.js"> </script>
+    <script type="text/javascript" src="../js/portfolio.js"></script>
+
+    <style>
+    .giffy {
+      display: none;
+    }
+      @media screen and (max-device-width: 800px) {
+        .webby {
+          display: none;
+        }
+        .giffy {
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color:#FFA54C;">
+    <!--Navbar begins-->
+     <div class="navbar2 hidden-xs">
+      <div align="center">
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="index.html"><li>Portfolio</li></a>
+          <a href="../about_me.html"><li>About Me</li></a>
+          <a href="../img/resume.pdf"><li>Resume</li></a>
+          <a href="../cs.html" id="spcl"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="navbar navbar-inverse navbar-static-top visible-xs">
+      <div class="container">
+        <div class="navbar-header">
+        <a href="#" class="navbar-brand">William Guiracoche</a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button></div>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="dropdown">
+            <li><a href="../about_me.html">The Author</a></li>
+            </li>
+            <li><a href="../cs.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Navbar ends-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="page-header">
+                <center>
+                  <h2>Senior Thesis Project:<br> Designing and Testing Control for New Deformable Mirror Prototype</h2>
+                </center>
+              </div>
+      
+              <center>
+                <video controls preload="auto" autoplay="autoplay" loop="loop" style="width:80%" class="webby">
+                  <source src="../img/ferrodm/fluid.mp4" type="video/mp4"></source>
+                </video>
+              </center>
+              
+              
+              <h2> Overview </h2>
+              <p class="fontsize">
+                This was my senior thesis project that I worked with my partner Daniel Echeverri. Our thesis “Design of a Closed-Loop Feedback System for Testing and Prototyping New Deformable Mirror Technologies” was advised by Professor N. Jeremy Kasdin and Professor Robert Stengel. Our thesis received top marks and was nominated for several departmental awards.
+                <br> <br>
+                In the summer of 2016 I worked on diagnosing the <a href="dmelectronics.html"> electronics</a> of a prototype of a ferrofluid deformable mirror (ferro-DM) at Princeton’s High Contrasting Imaging Lab (HCIL) and at the beginning of my senior year, I decided to continue working on it for my thesis project. While my summer work had focused on the circuitry of the ferro-DM prototype, my thesis project focused on testing the ferro-DM’s capabilities and limitations. 
+                <br><br>
+                The objective of this Senior Thesis was to assess the capabilities of a new type of ferrofluid deformable mirror (ferro-DM) which utilizes 7 inductive actuators and a facesheet. A new testbed was designed and assembled in order to provide accurate measurements of the wavefront from the mirror in two different orientations, horizontal and vertical. The system is composed of a light source, a wavefront sensor, and a ferrofluid deformable mirror. By actuating the inductors within the ferro-DM, the facesheet can be deformed to correct for wavefront errors. The addition of a facesheet also allows us to actuate the mirror using pressure control. Thus, both modes of actuation were explored to determine their feasibility as well as to help guide future ferro-DM designs. The ferro-DM used in this thesis was a new and uncharacterized DM designed in Professor Kasdin’s Lab. It was found that the current design has thermal deformation problems and that the choice of facesheet requires further work.
+              </p>
+
+              <h2> The Ferrofluid Deformable Mirror</h2>
+              <br>
+              <p class="fontsize">
+                <h4>Characteristics of the ferro-DM:</h4>
+                <uo class="fontsize">
+                <li>7 inductors below ferrofluid reservoir</li>
+                <li>Printed Circuit Board</li>
+                <li>Cellulose pellicle facesheet</li>
+                <li>Pressure Control</li>
+                <li>Vertical Placement </li>
+                </uo>
+              <br>
+              <br>
+              <center>
+                <img src="../img/ferrodm/dmcad.jpg"; width="80%">
+                <br>
+                <i width=80%>Cross section of the Ferro-DM prototype that we were testing. This prototype was built before I came onto the team.</i>
+              </center>
+              <br>
+              </p>
+                 
+              <h2> Designing and Building the Optical Testbed</h2>
+
+              <p class="fontsize">
+                The purpose of the optical testbed is to measure the surface of the ferro-DM by analyzing how it deforms an incoming wavefront. By creating a system with a known wavefront as the input and a reflected wavefront as the output, we were able to determine the shape of the surface of the ferro-DM.
+              </p>
+              <br>
+
+              <center>
+                  <img src="../img/ferrodm/optical_drawing.jpg"; width="80%">
+                  <br>
+                  <i>Our first sketches of what our optical testbed should look like.</i>
+                  <br><br>
+              </center>
+
+              <p class="fontsize">
+              To design the optical testbed, we used resizing lenses to project the collimated source beam onto the ferro-DM. We used resizing lenses again to project the reflected beam onto the wavefront sensor (for more details on the Phasics sensor, <a href="http://phasicscorp.com/high-resolution-wave-front-sensing-technology/"> click here</a>.)
+              </p>
+              <br>
+
+              <center>
+                <img src="../img/ferrodm/ray_trace.png"; width="80%">
+                <br> 
+                <i>Ray trace diagram of our set up. </i>
+                <br><br>
+              </center>
+              
+              <p class="fontsize">
+                After designing the optical setup, the testbed was carefully built and the control system was plugged into the ferro-DM. The setup was encased in a metal box to block outside light and measurements were taken while actuating the ferro-DM.
+                <br><br>
+                <center>
+                  <img src="../img/ferrodm/label_testbed.jpg"; width="80%">
+                  <br>
+                  <i> Our final setup of the optical testbed.</i>
+                  <br><br>
+                </center>
+              </p>
+
+              <h2>Results</h2>
+              <br>
+
+              <p class="fontsize">
+              
+              When running our tests on the controllability of the ferro-DM we found a few issues with the prototype due to its physical composition. 
+
+              The first issue was the deformation of the mirror surface due to thermal effects. When measuring the ferro-DM, the surface deformed as different parts of the circuits were turned on and then receded when it was turned off similarly to the temperature in a cooling curve. To solve this 
+              </p>
+
+              <br>
+
+              <center>
+                <img src="../img/ferroDM/thermal.jpg" alt="" class="featuredimg" width="100%">
+                <br><i>Deformation due to thermal effects.</i><br><br>
+              </center>
+              <br>
+
+              <p class="fontsize">
+              Another issue that was found that the undesired deformation due to gravity. Becuase the ferro-DM was measured in the vertical position, the ferrofluid flowed downwards and pulled on the surface causing it to sag.
+              </p>
+              <br>
+
+              <center>
+                <img src="../img/ferroDM/thermal_gsag.png" alt="" class="featuredimg" width="50%">
+                <br><i>Deformation due to gravity sag.</i><br><br>
+              </center>
+              <br>
+
+              <p class="fontsize">
+                The last issue was that the facesheet or mirror surface was not perfectly smooth. Due to gravity sag and other factors, the facesheet had flexure marks and the epoxy was visible near the edges of the surface.
+              </p>
+
+              <center>
+                <img src="../img/ferroDM/marks.png" alt="" class="featuredimg" width="50%">
+                <br><i>Imperfections on the reflective facesheet.</i><br><br>
+              </center>
+              <br>
+
+              <p class="fontsize">
+              For future design considerations, we would hope to test horizontally and design for space applications to eliminate the gravity sag. Additionally, we could change the facesheet material and mounting. To reduce the thermal effects, we would implement active cooling to the system and make changes to the the inductor layout and PCB design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+      
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

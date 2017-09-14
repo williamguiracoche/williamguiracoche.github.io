@@ -1,0 +1,2 @@
+# williamguiracoche.github.io
+This website shows some of my work as a Mechanical and Aerospace engineer. I want to thank Naoki Yokoyama for helping me put this together in just over a week with his tutorial.

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>William Guiracoche</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" type="../image/png" href="../img/favicon.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Scripts-->
+    <script type="text/javascript" src="../js/analytics.js"></script>
+    <script type="text/javascript" src="../js/jquery-2.1.3.min.js"> </script>
+    <script type="text/javascript" src="../js/portfolio.js"></script>
+
+    <style>
+    .giffy {
+      display: none;
+    }
+      @media screen and (max-device-width: 800px) {
+        .webby {
+          display: none;
+        }
+        .giffy {
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color:#FFA54C;">
+    <!--Navbar begins-->
+     <div class="navbar2 hidden-xs">
+      <div align="center">
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="index.html"><li>Portfolio</li></a>
+          <a href="../about_me.html"><li>About Me</li></a>
+          <a href="../img/resume.pdf"><li>Resume</li></a>
+          <a href="../cs.html" id="spcl"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="navbar navbar-inverse navbar-static-top visible-xs">
+      <div class="container">
+        <div class="navbar-header">
+        <a href="#" class="navbar-brand">William Guiracoche</a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button></div>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="about_me.html">The Author</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Navbar ends-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="page-header">
+                <center>
+                  <h2>Engineers Without Borders- Community Team Leader</h2>
+                </center>
+              </div>
+              <h3>Background</h3>
+              <p class="fontsize"> In the summer of 2015, I went to Peru as a travel team member to evaluate the water system we had completed the year, before in La Pitajaya. After the evaluation was complete we had one week to venture out into local communities near Samne, Peru to find a project and community. We took surveys and the team came back to Princeton to discuss the future project. At the beginning of my Junior year I became the leader of the Community sub team. As the sub team leader I had to make sure that my team would create documents to survey the future project and come up with a method to choose what project our chapter would work on for the next 5 years.
+              </p> 
+
+              <h3>The Challenge with Comparing Communities</h3>
+              <p class="fontsize">
+              The task of choosing a community to work with was not easy, especially since I personally interacted with all the kids and families from each community. Some communities were small and disorganized, others were medium sized but had a water source that was privately owned, others had organized communities but were gigantic in scope. This team came out of necessity since the travel team could not decide on a community. I spent many hours arguing with other travel team members about what our next step should be and we must have spent at least 20 hours total discussing between the communities, changing sides and going around in circles. If my team had to come up with a decision, it had to be  with a method that could evaluate all communities equally and efficiently.
+              </p>
+              <h3>House of Quality</h3>
+              <p class="fontsize">
+                To come up with a method to compare the different community projects qualitatively, I turned to my MAE 321 course, engineering design. In the class, I learned about how to make a house of quality and used these principles to design a small <a href="submarine.html">submarine</a> with my team. The house of quality is a method that allows companies to evaluate the qualities of a product.
+                <br><br>              
+                For my method, I viewed our organization as the customer and the community as the product being sold. My original house of quality considered only a few customer attributes and engineering characteristics. Customer attributes were attributes that we as an organization look for in a community (Easy access to water, sustainability of the system, affordability) and the engineering characteristics were attributes of the community and land that could affect our project (terrain, water source, elevation difference.) If this is confusing, you can read this <a href="https://hbr.org/1988/05/the-house-of-quality"> Harvard Business article</a> that I assigned my team; it does a great job at explaining the concepts behind the house of quality.
+              </p>
+              <br>
+              <center>
+                <img src="../img/ewbcommunity/onlinehouse.gif"; width="50%">
+                <br>
+                <i>
+                  Example of a house of quality used for evaluating a car. For a full explanation you can view this <a href="https://hbr.org/1988/05/the-house-of-quality"> Harvard Business article</a>.
+                </i>
+              </center>
+              <br>
+              <p class="fontsize">
+                I spent a couple of hours on the house of quality method and when I decided that I had something useful, I expanded it into a google sheets project so that my team of 20 people could work on it. In the end, we had 27 customer attributes and 27 engineering characteristics to consider. We then saw how to quantitatively calculate which engineering characteristics were the most important in a community (process shown in the caption of next image.)
+                </p>
+                <br>
+              <center>
+                <img src="../img/ewbcommunity/dahouse.png"; width="95%">
+                <br><br>
+                  <div style="padding-right: 5%; padding-left:5%"; align="left">
+                    <i>
+                    A small section of the house of quality that I created for my team. Here are the steps to calculate the important factors we should consider:
+                    <br><br>
+                    <ol>
+                      <li>
+                        Within the House of Qualities, different types of correlation are assigned different values. Strong positive correlation is +9, moderate  positive correlation is +3, no correlation is 0, moderate negative correlation is -3, and strong negative correlation is -9.
+                      </li> 
+                      <li>
+                        Customer Attributes listed vertically to the left have listed relative importances (0-20) that are multiplied by the correlation values of the Engineering Characteristics listed horizontally to determine how important the correlations are.
+                      </li>
+                      <li>
+                      Sum the multiplied values below each Engineering Characteristic to determine how important that Engineering Characteristic is overall.
+                      </li>
+                    </ol>
+                    </i>
+                  </div>
+
+              <br>
+                <img src="../img/ewbcommunity/chart.png"; width="80%">
+                <br>
+                <i>
+                  These were the final results from the house of quality.<br>This ranks which factors we should take into consideration the most to pick our community.
+                </i>
+              </center>
+              <br>
+
+              <h3>Final Decision</h3>
+              <p class="fontsize">
+              In the end, the team calculated that the community of Pusunchas was a good community to work with. This community was gigantic and nothing like anything we had done before but it had an extremely large potable water source with high flow rate, a large community that could help us build the system and a very strong community organization that would make communication and coordination easy. My team succeeded in weighing around 30 customer attributes and engineering characteristics to see which project would have the largest impact but also be cost effective and feasible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+      
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>
