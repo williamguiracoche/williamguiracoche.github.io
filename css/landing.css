@@ -16,11 +16,11 @@ body {
 }
 
 mark {
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .6);
 }
 
 .highlight {
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .textShadow {
