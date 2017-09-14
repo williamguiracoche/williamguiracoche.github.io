@@ -72,7 +72,7 @@ mark {
   /*width: 100%;*/
   height: auto;
   top: -1.5em;
-  background: url(../img/trains/working_hard_or_hardly_working.JPG) 50% 0 no-repeat;
+  background: url(../img/trains/working_hard_or_hardly_working.jpg) 50% 0 no-repeat;
   background-size: cover;
   z-index: 2;
 }
