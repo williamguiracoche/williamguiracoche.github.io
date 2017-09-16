@@ -17,9 +17,7 @@
     <script type="text/javascript" src="../js/portfolio.js"></script>
 
     <style>
-    .giffy {
-      display: none;
-    }
+    .giffy {display: none;}
       @media screen and (max-device-width: 800px) {
         .webby {
           display: none;
@@ -28,8 +26,8 @@
           display: inline;
         }
       }
-      body{color: #292A30; background-color:#164454}
 
+      body{color: #292A30; background-color:#164454}
     </style>
   </head>
   <body>
@@ -78,14 +76,60 @@
                   <center>
                   <h2>Summer 2016 Internship:<br> Diagnosing Electronics for New Deformable Mirror Prototype</h2>
                 </center>
-            </div>
-            <h2> Overview </h2>
-              <p class="fontsize">
-                In my Sophomore and Junior courses, I took <a href="https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=002322&term=1154"> Introduction of Engineering Dynamics</a> and <a href="https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=008044&term=1162">Space Flight (Orbital Mechanics)</a> ith professor N. Jeremy Kasdin and was so interested in the courses that I asked professor N. Jeremy Kasdin if I could work in his lab. 
-                <br><br>
-                When I joined the lab I was shown a ferrofluid deformable mirror that had some issues and didn't send the proer signals and I was given the task to find the issue. I had worked a bit with Arduino before so the idea of accomplishing this task in lass than two months seemed daunting. I began by studying the fundamentals of logic design and understanding how fix inductive spikes. From there, I slowly went to building small circuits and eventually intoduced the Digital to Analog Converters (DAC) to set up the control for seven inductors. I then learned LabVIEW and I2C protocol to control the indutors from a computer through a myRIO device.
+              </div>
+              <h2> Overview </h2>
+                <p class="fontsize">
+                  In my Sophomore and Junior courses, I took <a href="https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=002322&term=1154"> Introduction of Engineering Dynamics</a> and <a href="https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=008044&term=1162">Space Flight (Orbital Mechanics)</a> with professor N. Jeremy Kasdin and was so interested in the courses that I asked him if I could work in his lab. 
+                  <br><br>
+                  When I joined the lab I was shown a ferrofluid deformable mirror. The prototype wasn't sending the proper signals and I was given the task to find the issue. I had only worked bit with Arduino before so the idea of accomplishing this task in less than two months seemed daunting. I began by studying the fundamentals of logic design and understanding how to fix inductive spikes. From there, I slowly went to building small circuits and eventually intoduced the Digital to Analog Converters (DAC) to set up the control for seven inductors. I then learned LabVIEW and I2C protocol to control the indutors from a computer through a myRIO device.
+                </p>
+                <br>
+              <center>
+                  <img src="../img/ferrodm/projectoverview.PNG"; width="80%">
+                  <br> 
+                  <i>A very generic chart that simplifies the system the I built over my summer internship.</i>
+                  <br><br>
+              </center>
 
-              </p>
+              <center>
+                  <img src="../img/ferrodm/messedpwm.JPG"; width="45%">
+                  <img src="../img/ferrodm/fixedpwm.JPG"; width="45%">
+                  <br> 
+                  <i>My first excercise in using diodes and resistor to reduce inductive kickback.</i>
+                  <br><br>
+              </center>
+
+
+              <center>
+                  <img src="../img/ferrodm/onedriver.JPG"; width="65%">
+                  <br> 
+                  <i>My first circuit to produce a PWM signal to an inductor.</i>
+                  <br><br>
+              </center>
+
+              <center>
+                  <img src="../img/ferrodm/driverdac.JPG"; width="65%">
+                  <br> 
+                  <i>Controlling the device using myRIO to send signals to the DACs. Digital signals probed with a Saleae.</i>
+                  <br><br>
+              </center>
+
+              <center>
+                  <img src="../img/ferrodm/hookedup.JPG"; width="65%">
+                  <br> 
+                  <i>Controlling the device using myRIO to send signals to the DACs. Digital signals probed with a Saleae.</i>
+                  <br><br>
+              </center>
+
+              <center>
+                  <img src="../img/ferrodm/dmunder.JPG"; width="65%">
+                  <br> 
+                  <i>All of these electronics are based off the circuit board on the ferroDM prototype.</i>
+                  <br><br>
+              </center>
+
+
+
           </div>
         </div>
       </div>
